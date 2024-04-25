@@ -1,0 +1,49 @@
+<div class="w-screen h-screen relative bg-slate-500">
+  <div class="w-full h-full absolute bg-purple-700">
+    <img
+      class="absolute left-0 bottom-0 w-64"
+      src="/assets/svg/login-bg-left.svg"
+      alt=""
+    />
+    <img
+      class="absolute right-0 bottom-0 w-64"
+      src="/assets/svg/login-bg-rigth.svg"
+      alt=""
+    />
+  </div>
+  <div class="relative bg-yellow-800 w-4/12 m-auto">
+    <header class="flex justify-center pt-4">
+      <img
+        class="w-64"
+        src="/assets/images/logo/logo-gradient-blue-trello.png"
+        alt=""
+      />
+    </header>
+    <div class="w-full bg-orange-950 p-4 space-y-3 rounded shadow-lg">
+      <div>
+        <h1 class="font-semibold text-center mb-6 mt-4">Log in to Trello</h1>
+        <form novalidate class="space-y-4" action="">
+          <div>
+            <div>
+              <input placeholder="Enter email" class="w-full" type="text" />
+            </div>
+          </div>
+          <div>
+            <div>
+              <input placeholder="Enter password" class="w-full" type="text" />
+            </div>
+          </div>
+          <div>
+            <app-btn [typeBtn]="'submit'">Log in</app-btn>
+          </div>
+        </form>
+      </div>
+      <hr>
+      <div class=" flex flex-row justify-center items-center space-x-4 space-y-2">
+        <a class=" font-light text-blue-600" href="">Can't log in?</a>
+        <span>.</span>
+        <a class=" font-light text-blue-600" href="">Sign up for an account</a>
+      </div>
+    </div>
+  </div>
+</div>
